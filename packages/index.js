@@ -2,6 +2,8 @@ import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
 import * as dotenv from "dotenv";
+import PostRouter from "./routes/Posts.js";
+
 
 dotenv.config();
 
@@ -19,6 +21,8 @@ app.use((err, req, res, next) =>{
         message,
     });
 });
+
+app.use("/api/post", PostRouter);
 
 
 app.get("/", async (req, res) => {
