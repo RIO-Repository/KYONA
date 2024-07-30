@@ -3,7 +3,7 @@ import cors from "cors";
 import mongoose from "mongoose";
 import * as dotenv from "dotenv";
 
-dotenv.config;
+dotenv.config();
 
 const app = express();
 app.use(cors());
@@ -27,8 +27,20 @@ app.get("/", async (req, res) => {
     });
 });
 
+const connectDB = () => {
+    mongoose.set("strictQuery", true);
+    mongoose.connect(process.env.MONGODB_URL)
+    .then(() => console.log("Mongodb is connected "))
+    .catch((err) => {
+        console.error("Mongodb is not connected");
+        console.error(err);
+    });
+};
+
 const startServer = async() => {
     try {
+        
+        connectDB();
         app.listen(5000, () => console.log("Server started on 5000 port"))
     }catch (error) {
         console.log(error);
