@@ -1,13 +1,14 @@
-## Add new features in Backend!✨
-
-### Add a Backend feature!
-
-**Title: `[ADD Backend] : `**
+---
+name: Feature request
+about: Suggest an idea for this project
+title: ''
+labels: ''
+assignees: ''
 
 ---
 
-#### Backend Summary 📝
-**Label**: Backend Summary 📝  
+#### Feature Summary 📝
+**Label**: Feature Summary 📝  
 **Description**: Provide a concise summary of the Backend feature that you created.  
 **Placeholder**: Please include a brief overview and mention the purpose of your feature.  
 **Validations**: Required
@@ -46,3 +47,7 @@
 **Description**: By submitting this issue, you agree to our [CONTRIBUTING GUIDELINES.](../blob/master/CONTRIBUTING.md)  
 **Options**:
 - I adhere to the [CONTRIBUTING GUIDELINES](../blob/master/CONTRIBUTING.md) of this project. (Required)
+
+
+**Additional context**
+Add any other context or screenshots about the feature request here.
