@@ -1,53 +1,41 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
+name: "Feature Request!✨"
+about: "Add a feature!"
+title: "[ADD Feature] : "
+labels: enhancement
 assignees: ''
 
 ---
 
-#### Feature Summary 📝
-**Label**: Feature Summary 📝  
-**Description**: Provide a concise summary of the Backend feature that you created.  
+### Feature Summary 📝
+
+**Label**: Frontend Summary 📝  
+**Description**: Provide a concise summary of the frontend feature that you created.  
 **Placeholder**: Please include a brief overview and mention the purpose of your feature.  
 **Validations**: Required
 
----
+### Development Approach 🚀
 
-#### Development Approach 🚀
 **Label**: Development Approach 🚀  
 **Description**: Give a brief explanation of your features.  
 **Placeholder**: Keep it concise and to the point!  
 **Validations**: Required
 
----
+### Deployment Status
 
-#### Deployment Status
 **Label**: Deployment Status  
-**Description**: Have you deployed your Backend feature?  
-**Multiple**: False  
+**Description**: Have you deployed your frontend feature?  
 **Options**:
-- Yes
-- No
+- [ ] Yes
+- [ ] No
 
----
+### Select the open source program you are contributing to
 
-#### Select the open source program you are contributing to
 **Label**: Select the open source program you are contributing to  
-**Multiple**: True  
 **Options**:
-- Other  
+- [ ] Other  
 **Validations**: Required
 
----
+### Code of Conduct
 
-#### Code of Conduct
-**Label**: Code of Conduct  
-**Description**: By submitting this issue, you agree to our [CONTRIBUTING GUIDELINES.](../blob/master/CONTRIBUTING.md)  
-**Options**:
-- I adhere to the [CONTRIBUTING GUIDELINES](../blob/master/CONTRIBUTING.md) of this project. (Required)
-
-
-**Additional context**
-Add any other context or screenshots about the feature request here.
+- [ ] I adhere to the [CONTRIBUTING GUIDELINES](../blob/master/CONTRIBUTING.md) of this project. (Required)
