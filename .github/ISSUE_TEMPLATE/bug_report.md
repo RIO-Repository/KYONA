@@ -1,38 +1,59 @@
 ---
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
+name: "Bug Report 🐞"
+about: "Report a bug found in the project."
+title: "[BUG] : "
+labels: bug
 assignees: ''
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+### Bug Description 🐞
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+**Label**: Bug Description 🐞  
+**Description**: Enter a detailed description of the bug you encountered.  
+**Placeholder**: Please provide a detailed summary of the bug.  
+**Validations**: Required
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+### Bug Location 🗺️
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+**Label**: Bug Location 🗺️  
+**Description**: Specify where the bug is present.  
+**Options**:
+- Frontend
+- Backend
+- Both  
+**Validations**: Required
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+### Steps to Reproduce 🔄
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+**Label**: Steps to Reproduce 🔄  
+**Description**: Provide the steps to reproduce the bug.  
+**Placeholder**: List the steps needed to reproduce the bug.  
+**Validations**: Required
 
-**Additional context**
-Add any other context about the problem here.
+### Expected Behavior ✔️
+
+**Label**: Expected Behavior ✔️  
+**Description**: Describe what you expected to happen.  
+**Placeholder**: Describe the expected behavior.  
+**Validations**: Required
+
+### Actual Behavior ❌
+
+**Label**: Actual Behavior ❌  
+**Description**: Describe what actually happened.  
+**Placeholder**: Describe the actual behavior.  
+**Validations**: Required
+
+### Proposed Solution
+
+**Label**: Proposed Solution  
+**Description**: How do you plan to fix the bug?  
+**Options**:
+- [ ] I will provide a pull request to fix this bug.
+- [ ] I need help to fix this bug.  
+**Validations**: Required
+
+### Adherence to Code of Conduct
+
+- [ ] I adhere to the [CONTRIBUTING GUIDELINES](../blob/master/CONTRIBUTING.md) of this project. (Required)
