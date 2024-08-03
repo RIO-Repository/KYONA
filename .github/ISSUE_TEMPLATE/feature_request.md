@@ -1,20 +1,51 @@
----
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
+name: Add new features in Frontend!✨
+description: Add a Frontend feature!
+title: "[ADD FRONTEND] : "
 
----
+body:
+  - type: textarea
+    id: frontend-summary
+    attributes:
+      label: Frontend Summary 📝
+      description: Provide a concise summary of the frontend feature that you created.
+      placeholder: Please include a brief overview and mention the purpose of your feature.
+    validations:
+      required: true
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+  - type: textarea
+    id: frontend-development
+    attributes:
+      label: Development Approach 🚀
+      description: Give a brief explanation of your features.
+      placeholder: Keep it concise and to the point!
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: frontend-deployment
+    attributes:
+      label: Deployment Status
+      description: Have you deployed your frontend feature?
+      multiple: false
+      options:
+        - "Yes"
+        - "No"
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+  - type: dropdown
+    id: open-source-contribution
+    attributes:
+      label: Select the open source program you are contributing to
+      multiple: true
+      options:
+        - Other
+    validations:
+      required: true
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
-
-**Additional context**
-Add any other context or screenshots about the feature request here.
+  - type: checkboxes
+    id: code-of-conduct
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to our [CONTRIBUTING GUIDELINES.](../blob/master/CONTRIBUTING.md)
+      options:
+        - label: I adhere to the [CONTRIBUTING GUIDELINES](../blob/master/CONTRIBUTING.md) of this project.
+          required: true
