@@ -1,0 +1,80 @@
+name: Custom Issue
+
+description: Report an issue or provide feedback
+
+title: "[ISSUE] "
+
+labels: 
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Thank you for taking the time to report an issue or provide feedback!**
+
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: A brief summary of the issue or feedback
+      placeholder: Issue title
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of the issue or feedback
+      placeholder: Describe the issue or feedback
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce (if applicable)
+      description: |
+        If reporting a bug, please provide steps to reproduce the behavior:
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+      placeholder: Provide steps to reproduce the issue
+
+  - type: input
+    id: expected
+    attributes:
+      label: Expected Behavior/Outcome
+      description: What you expected to happen or the outcome you hope for
+      placeholder: Describe the expected behavior or outcome
+
+  - type: input
+    id: actual
+    attributes:
+      label: Actual Behavior/Outcome
+      description: What actually happened
+      placeholder: Describe the actual behavior or outcome
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: |
+        Provide details about your environment (if applicable):
+        - OS: [e.g., Windows, Mac, Linux]
+        - Browser: [e.g., Chrome, Safari]
+        - Version: [e.g., 22]
+      placeholder: Environment details
+
+  - type: input
+    id: screenshots
+    attributes:
+      label: Screenshots (if applicable)
+      description: If applicable, add screenshots to help explain your problem
+      placeholder: Add screenshots
+
+  - type: input
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any other context about the problem here
+      placeholder: Additional context
+
+
