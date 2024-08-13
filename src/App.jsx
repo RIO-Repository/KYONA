@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./utils/Theme";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import CreatePost from "./pages/CreatePost";
+import LandingPage from "./components/home/LandingPage";
 
 const Container = styled.div`
   width: 100%;
@@ -40,7 +41,8 @@ function App() {
           <BrowserRouter>
             <NavBar toggleTheme={toggleTheme} currentTheme={theme} />
             <Routes>
-              <Route path="/" exact element={<Home />} />
+            <Route path="/" exact element={<LandingPage />} />
+              <Route path="/home" exact element={<Home />} />
               <Route path="/post" exact element={<CreatePost />} />
             </Routes>
           </BrowserRouter>
