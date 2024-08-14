@@ -7,24 +7,20 @@ import Home from "./pages/Home";
 import CreatePost from "./pages/CreatePost";
 import LandingPage from "./components/home/LandingPage";
 
-const Container = styled.div`
+const AppContainer = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   background: ${({ theme }) => theme.bg};
   color: ${({ theme }) => theme.text_primary};
-  overflow-x: hidden;
-  overflow-y: hidden;
   transition: all 0.2s ease;
+  overflow: hidden;
 `;
 
-const Wrapper = styled.div`
-  height: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 3;
+const ContentWrapper = styled.div`
+  flex: 1;
+  overflow-y: auto;
 `;
 
 function App() {
@@ -36,18 +32,18 @@ function App() {
 
   return (
     <ThemeProvider theme={theme === "dark" ? darkTheme : lightTheme}>
-      <Container>
-        <Wrapper>
-          <BrowserRouter>
-            <NavBar toggleTheme={toggleTheme} currentTheme={theme} />
+      <BrowserRouter>
+        <AppContainer>
+          <NavBar toggleTheme={toggleTheme} isDarkTheme={theme === "dark"} />
+          <ContentWrapper>
             <Routes>
-            <Route path="/" exact element={<LandingPage />} />
+              <Route path="/" exact element={<LandingPage />} />
               <Route path="/home" exact element={<Home />} />
               <Route path="/post" exact element={<CreatePost />} />
             </Routes>
-          </BrowserRouter>
-        </Wrapper>
-      </Container>
+          </ContentWrapper>
+        </AppContainer>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }
