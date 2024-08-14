@@ -137,7 +137,7 @@ const Particles = () => {
     animate();
   }, []);
 
-  return <canvas ref={canvasRef} className="fixed top-0 left-0 w-full h-full z-0"></canvas>;
+  return <canvas ref={canvasRef} className="fixed top-15 left-0 w-full h-full z-0"></canvas>;
 };
 
 export default Particles;
