@@ -5,7 +5,7 @@ import { useLocation, useNavigate } from "react-router";
 import { AddRounded, WebRounded, Brightness4, Brightness7 } from "@mui/icons-material";
 
 const Container = styled.div`
-  flex: 1;
+  width: 100%;
   background: ${({ theme }) => theme.navbar};
   color: ${({ theme }) => theme.menu_primary_text};
   font-weight: bold;
@@ -35,7 +35,8 @@ const NavBar = ({ toggleTheme, isDarkTheme }) => {
   const gotoCreatePost = () => {
     navigate("/post");
   };
-  const gottoHome = () => {
+
+  const gotoHome = () => {
     navigate("/");
   };
 
@@ -47,7 +48,7 @@ const NavBar = ({ toggleTheme, isDarkTheme }) => {
           <Button
             text="Explore Posts"
             leftIcon={<WebRounded style={{ fontSize: "18px" }} />}
-            onClick={gottoHome}
+            onClick={gotoHome}
             type="secondary"
           />
         ) : (
