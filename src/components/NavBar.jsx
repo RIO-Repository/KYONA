@@ -60,7 +60,7 @@ const NavBar = ({ toggleTheme, isDarkTheme }) => {
         )}
         <Button
           text={isDarkTheme ? "" : ""}
-          leftIcon={isDarkTheme ? <Brightness7 /> : <Brightness4 />}
+          leftIcon={isDarkTheme ? <Brightness4 /> : <Brightness7 />} // Swap icons
           onClick={toggleTheme}
           type="secondary"
         />
